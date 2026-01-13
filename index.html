@@ -249,6 +249,15 @@
                   <span>arXiv</span>
                 </a>
               </span>
+              <span class="link-block">
+                  <a href="#" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <p style="font-size:18px">🤗</p>
+                  </span>
+                  <span>Hugging Face</span>
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -316,6 +325,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Rendering Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- TODO: Replace with your research result images -->
@@ -332,9 +342,9 @@
           Rendering results on the TUM RGB-D dataset.
         </h2>
       </div>
+    </div>
   </div>
-</div>
-</div>
+
 </section>
 <!-- End image carousel -->
 
@@ -402,12 +412,18 @@
     <div class="container">
       <h2 class="title is-3">Tracking Results</h2>
 
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-10"> <figure class="image">
+            <img src="static/images/Tracking.png" 
+                 alt="Description of the top image">
+          </figure>
+          <p class="is-size-6 has-text-grey">
+            Tracking result on Replica dataset </p>
+        </div>
+      </div>
       <div class="columns is-multiline is-centered has-text-centered">
-
-        <!-- 圖片 1 -->
         <div class="column is-one-half">
           <figure class="image">
-            <!-- TODO: 換成你的圖 -->
             <img src="static/images/Tracking_table_tum.PNG"
                  alt="Top-view tracking trajectories on the Replica office0 sequence.">
           </figure>
@@ -416,11 +432,8 @@
           </p>
         </div>
 
-
-        <!-- 圖片 4（如果不需要可以整段刪掉） -->
         <div class="column is-one-half">
           <figure class="image">
-            <!-- TODO: 換成你的圖 -->
             <img src="static/images/Tracking_table_replica.PNG"
                  alt="Top-view tracking trajectories on another sequence.">
           </figure>
@@ -497,19 +510,22 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <div class="bibtex-header">
-      <h2 class="title">BibTeX</h2>
+      <h2 class="title">Citation</h2>
       <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
         <i class="fas fa-copy"></i>
         <span class="copy-text">Copy</span>
       </button>
     </div>
-    <pre id="bibtex-code"><code>@article{rgs-slam-2026,
-  title     = {RGS-SLAM: Robust Gaussian Splatting SLAM with One-Shot Dense Initialization},
-  author    = {Wei-Tse Cheng, Yen-Jen Chiou, Yuan-Fu Yang},
-  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year      = {2026},
-  url       = {https://github.com/Breeze1124/RGS-SLAM}
-}</code></pre>
+    <pre id="bibtex-code"><code>@misc{rgs_slam2026,
+      title={RGS-SLAM: Robust Gaussian Splatting SLAM with One-Shot Dense Initialization}, 
+      author={Wei-Tse Cheng, Yen-Jen Chiou, Yuan-Fu Yang},
+      year={2026},
+      eprint={2601.00705},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2601.00705}, 
+}
+</code></pre>
   </div>
 </section>
 
